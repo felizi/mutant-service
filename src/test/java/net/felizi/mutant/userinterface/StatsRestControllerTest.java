@@ -34,7 +34,7 @@ public class StatsRestControllerTest {
   public void shouldCallAndReturnMutant() throws Exception {
     Mockito.when(useCase.execute()).thenReturn(mapper.convertValue(new StatisticsGeneticTypesDTO(0, 1, 2), Map.class));
 
-    mvc.perform(MockMvcRequestBuilders.get("/stat/") //
+    mvc.perform(MockMvcRequestBuilders.get("/stats/") //
         .contentType(MediaType.APPLICATION_JSON))//
         .andDo(MockMvcResultHandlers.print())//
         .andExpect(MockMvcResultMatchers.status().isOk())//

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import net.felizi.mutant.application.usecase.StatisticsOfGeneticTypesUseCase;
 
 @RestController
-@RequestMapping("/stat")
+@RequestMapping("/stats")
 @CrossOrigin
 public class StatsRestController extends AbstractRestController<StatsRestController> {
   private @Autowired StatisticsOfGeneticTypesUseCase statisticsOfGeneticTypesUseCase;
