@@ -9,7 +9,6 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import net.felizi.mutant.config.exception.MultipleException;
-import net.felizi.mutant.domain.exception.NotMutantException;
 
 @ControllerAdvice
 public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionHandler {
@@ -17,10 +16,5 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
   @ExceptionHandler(value = { MultipleException.class })
   protected ResponseEntity<Object> handle(MultipleException ex, WebRequest request) {
     return handleExceptionInternal(ex, ex.getErrors(), new HttpHeaders(), HttpStatus.FORBIDDEN, request);
-  }
-
-  @ExceptionHandler(value = { NotMutantException.class })
-  protected ResponseEntity<Object> handle(NotMutantException ex, WebRequest request) {
-    return handleExceptionInternal(ex, ex.getMessage(), new HttpHeaders(), HttpStatus.FORBIDDEN, request);
   }
 }
