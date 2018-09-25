@@ -41,7 +41,7 @@ POST data:
       "href": "http://mutant-service.herokuapp.com/mutant/"
     },
     "stat": {
-      "href": "http://mutant-service.herokuapp.com/stat/"
+      "href": "http://mutant-service.herokuapp.com/stats/"
     }
   }
 }
@@ -72,7 +72,7 @@ POST data:
       "href": "http://mutant-service.herokuapp.com/mutant/"
     },
     "stat": {
-      "href": "http://mutant-service.herokuapp.com/stat/"
+      "href": "http://mutant-service.herokuapp.com/stats/"
     }
   }
 }
