@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/felizi/mutant-service.svg?branch=master)](https://travis-ci.org/felizi/mutant-service)
-[![codecov](https://codecov.io/gh/felizi/mutant-service/branch/master/graph/badge.svg)](https://codecov.io/gh/felizi/mutant-service)
+[![Build Status](https://travis-ci.org/felizi/mutant-service.svg?branch=develop)](https://travis-ci.org/felizi/mutant-service)
+[![codecov](https://codecov.io/gh/felizi/mutant-service/branch/develop/graph/badge.svg)](https://codecov.io/gh/felizi/mutant-service)
 # API for Detection of Mutants
 
 ### Stack
