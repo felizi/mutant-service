@@ -28,7 +28,7 @@ public class MutantsRestController extends AbstractRestController<MutantsRestCon
     GeneticTypeEnum geneticType = mutantValidatorUseCase.execute(genetic);
     Link self = ControllerLinkBuilder.linkTo(link.validate(genetic)).withSelfRel();
     Link stat = ControllerLinkBuilder.linkTo(ControllerLinkBuilder.methodOn(StatsRestController.class).stats())
-        .withRel("stat");
+        .withRel("stats");
     Resource<GeneticTypeEnum> resource = new Resource<>(geneticType, self, stat);
 
     switch (geneticType) {
